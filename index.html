@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page with Embedded Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background-color: #F0F0F0;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 50px 20px;
+      background-color: #FFFFFF;
+    }
+
+    .feature {
+      flex: 1 1 30%;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .feature h3 {
+      font-size: 1.5em;
+    }
+
+    .feature p {
+      font-size: 1em;
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Chatbot button styling */
+    .chatbot-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    /* Chatbot iframe styling */
+    .chatbot-iframe {
+      border: none;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 450px;
+      max-height: 600px;
+      background: transparent;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: none;
+    }
+
+    .chatbot-iframe.open {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Landing Page</h1>
+    <nav>
+      <a href="#home" style="color: white; margin-right: 20px;">Home</a>
+      <a href="#features" style="color: white; margin-right: 20px;">Features</a>
+      <a href="#contact" style="color: white;">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Discover Our Amazing Product</h1>
+    <p>Our product will help you achieve your goals and improve your life.</p>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Feature One</h3>
+      <p>Detail about feature one and how it benefits the user.</p>
+    </div>
+    <div class="feature">
+      <h3>Feature Two</h3>
+      <p>Detail about feature two and how it benefits the user.</p>
+    </div>
+    <div class="feature">
+      <h3>Feature Three</h3>
+      <p>Detail about feature three and how it benefits the user.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at info@example.com</p>
+  </footer>
+
+  <div id="chatbot-container"></div>
+        <script src="https://your-platform-url.com/api/chatbot-script"></script>
+        <script>
+          window.initializeChatbot("cly4nhlzy000ds1o3umkp3ir2");
+        </script>
+</body>
+</html>
